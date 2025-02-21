@@ -23,10 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ShadowWalkerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Navigation(innerPadding)
                 }
             }
         }

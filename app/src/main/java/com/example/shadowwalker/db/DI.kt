@@ -21,4 +21,8 @@ object DBModule{
         "run_db"
     ).addTypeConverter(LocationTypeConverter())
         .build()
+
+    @Provides
+    @Singleton
+    fun provideRunDao(runDatabase: RunDatabase) = runDatabase.getRunDao()
 }

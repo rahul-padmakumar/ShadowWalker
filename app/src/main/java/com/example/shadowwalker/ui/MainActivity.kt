@@ -1,4 +1,4 @@
-package com.example.shadowwalker
+package com.example.shadowwalker.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
